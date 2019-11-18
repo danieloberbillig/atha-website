@@ -50,3 +50,30 @@ my_number: 5
 
 # Troubleshoot:
 - by default index.html ignored if file index.markdown exist in root
+
+
+# Deployment
+https://jekyllrb.com/docs/step-by-step/10-deployment/
+- have gem file to ensure the version of Jekyll and other gems remains consistent across different environments
+```
+bundle install
+```
+
+to use gemfile -> restrict ruby to only use gems from gemfile
+```
+bundle exec jekyll serve
+```
+
+when Gemfile changes, run update
+```
+bundle update
+```
+
+- read about dev vs prod environment variable to include analytics in prod
+
+
+
+## Run production build
+```
+JEKYLL_ENV=production bundle exec jekyll build
+```

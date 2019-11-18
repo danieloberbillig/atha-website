@@ -1,7 +1,7 @@
 ---
 layout: default
-title: About ATHA survey 2019
+title: About
 ---
 
-# About ATHA
-ATHA desc.
+# About Jekyll
+This is Jekyll
