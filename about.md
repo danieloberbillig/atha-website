@@ -1,7 +1,7 @@
 ---
 layout: default
-title: About
+title: About the Survey
 ---
 
-# About Jekyll
-This is Jekyll
+# About the Survey 2019
+Add here some more stats about the survey (date, method, high level results)

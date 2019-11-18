@@ -88,3 +88,6 @@ JEKYLL_ENV=production bundle exec jekyll build
 ## ToDo
 - have content as sticky side links on right
 - ask if line breaks are ok - not sure if new pdf page starts
+- look at danHeader for index.html -> just copy&paste, must be broken for lack of grid container
+    also added to scss and added import in main -> check if this the right way to do
+- chk _config.yml if not broken

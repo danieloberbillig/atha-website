@@ -14,7 +14,7 @@ defaults:
       path: ""
       type: "posts"
     values:
-      layout: "post"
+      layout: "survey-report"
   - scope:
       path: ""
     values:
