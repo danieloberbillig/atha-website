@@ -20,6 +20,8 @@ defaults:
     values:
       layout: "default"
 
+# TODO: theme is not working
+theme: minima
 plugins:
   - jekyll-feed
   - jekyll-sitemap

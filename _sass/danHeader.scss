@@ -7,8 +7,11 @@
 .grid-header {
     overflow: hidden;
     padding: 6px 10px;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-    z-index: 2;
+    // box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    // z-index: 2;
+    background-color: rgb(48, 47, 47);
+    font-family: Arial, Helvetica, sans-serif;
+    height: 50px;
 }
 
 .grid-header a {
@@ -49,7 +52,8 @@
 }
 
 .grid-header__nav a.active {
-    color: #8eb101;
+    color: lightgray;
+    // color: #8eb101;
 }
 
 .grid-header__nav a.active:hover {
