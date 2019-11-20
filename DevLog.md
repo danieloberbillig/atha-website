@@ -40,6 +40,12 @@ my_number: 5
 {{ page.my_number }}
 ```
 
+How to commtent out in Liquid:
+        {% comment %}
+        {% include d3-example.html %}
+        {% endcomment %}
+
+
 
 # Layouts
 - Layouts are templates that wrap around your content; in _layouts
@@ -79,7 +85,10 @@ JEKYLL_ENV=production bundle exec jekyll build
 ```
 
 
-
+## d3 integration
+tried
+    gem install d3-rails
+but it looked suspicious and seems to be for ruby on rails pipeline only
 
 
 
