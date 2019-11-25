@@ -22,6 +22,18 @@ body {
     margin-top: 100px;
 }
 
+
+.hero {
+    width: 100%;
+}
+
+.hero__image {
+    width: 100%;
+}
+
+
+
+
 .mainTitle {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
@@ -63,8 +75,38 @@ aside, section {
 
 
 // CHARTS --------------------
+
+.chartRow {
+    // height: 300px;
+    // border: 1px solid lightgray;
+    margin: 0px auto 50px auto;
+    
+    display: flex;
+    flex-wrap: nowrap;
+}
+
 .chartContainer {
-    height: 300px;
-    border: 1px solid lightgray;
-    // background-color: darkorange;
+    position: relative;
+    /* max-height: 200px; */
+    width: 100vw;
+    max-width: 400px;
+    margin: 10px auto 0px auto;
+    padding: 20px 20px 20px 20px;
+    // border: .5px lightgray solid;
+}
+
+.chart--col-6 {
+    flex: 6;
+}
+
+.chart--col-12 {
+    flex: 12;
+}
+
+#chart_1 {
+    // background-color: red;
+}
+
+#chart_2 {
+    // background-color: orange;
 }

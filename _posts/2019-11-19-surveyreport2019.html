@@ -14,25 +14,10 @@ author: Daniel Oberbillig
 </head>
 
 <body>
-    <!-- ============================================================================ -->
-    <div class="chartContainer">
-        
-        <!-- commtent out in Liquid -->
-        {% comment %}
-        {% include d3-chart_1.html %}
-        {% include d3-example.html %}
-        {% endcomment %}
-       
 
-        <!-- Tutorial:  -->
-<!-- https://blog.risingstack.com/d3-js-tutorial-bar-charts-with-javascript/ -->
-
-<!-- Full code: -->
-<!-- https://jsfiddle.net/matehu/w7h81xz2/ -->
-
-
+    <div class="hero">
+        <img class="hero__image" src="/assets/img/tinyhouse.jpg" alt="tiny house">
     </div>
-    <!-- ============================================================================ -->
 
 
     <div class="contentHeader">
@@ -153,9 +138,28 @@ author: Daniel Oberbillig
                 41-50; and 51-69 (See Fig. 1).
             </p>
 
-            <div class="chartContainer">
-                <!-- INSERT CHART HERE -->
+
+
+
+            <div class="chartRow">
+                <div class="chartContainer">
+                    <canvas id="chart_1" class="chart--col-6"></canvas>
+                </div>
+
+                <div class="chartContainer">
+                    <canvas id="chart_2" class="chart--col-6"></canvas>
+                </div>
             </div>
+
+            <!-- BACKUP -->
+            <!-- commented out (Liquid) -->
+            {% comment %}
+            {% include d3-chart_1.html %}
+            {% include d3-example.html %}
+            {% endcomment %}
+
+
+
 
             <p>
                 Over ¾ of respondents were female (76.63% or 318 people). This may reflect a greater interest in tiny
@@ -191,8 +195,10 @@ author: Daniel Oberbillig
                 vacant lot in some councils in Queensland is illegal).
             </p>
 
-            <div class="chartContainer">
-                <!-- INSERT CHART HERE -->
+            <div class="chartRow">
+                <div class="chartContainer">
+                    <canvas id="chart_3" class="chart--col-12"></canvas>
+                </div>
             </div>
 
             <p>
@@ -218,8 +224,10 @@ author: Daniel Oberbillig
                 RACV, NRMA, CIL, APIA and Elders.
             </p>
 
-            <div class="chartContainer">
-                <!-- INSERT CHART HERE -->
+            <div class="chartRow">
+                <div class="chartContainer">
+                    <canvas id="chart_4" class="chart--col-12"></canvas>
+                </div>
             </div>
 
         </section>
@@ -254,8 +262,10 @@ author: Daniel Oberbillig
                 ensure the dwelling is road legal.
             </p>
 
-            <div class="chartContainer">
-                <!-- INSERT CHART HERE -->
+            <div class="chartRow">
+                <div class="chartContainer">
+                    <canvas id="chart_5" class="chart--col-12"></canvas>
+                </div>
             </div>
 
         </section>
@@ -269,8 +279,10 @@ author: Daniel Oberbillig
                 designer’. Four respondents said they were architects and/or designers.
             </p>
 
-            <div class="chartContainer">
-                <!-- INSERT CHART HERE -->
+            <div class="chartRow">
+                <div class="chartContainer">
+                    <canvas id="chart_6" class="chart--col-12"></canvas>
+                </div>
             </div>
 
             <p>
