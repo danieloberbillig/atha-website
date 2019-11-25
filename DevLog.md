@@ -100,3 +100,29 @@ but it looked suspicious and seems to be for ruby on rails pipeline only
 - look at danHeader for index.html -> just copy&paste, must be broken for lack of grid container
     also added to scss and added import in main -> check if this the right way to do
 - chk _config.yml if not broken
+
+
+
+# Charts
+Research
+- Plotly        free javascript version - looks great
+- Chartist      very limited charts
+- Chart.js
+- Highcharts    BEST free for non-profit - atha seems not to be non-profit
+
+
+# Ruby Gems
+- seem to be installed mostly in ruby central runtime folder on C:\Ruby26-x64\lib\ruby\gems\2.6.0\gems
+
+- how are they shipped via app??
+
+e.g. Install Chart.js as ruby gem
+https://github.com/coderbydesign/chart-js-rails
+    1. add to gemfile:
+        gem 'chart-js-rails'
+    2. Excute
+        bundle
+       Or install manually
+        gem install chart-js-rails
+    3. add to app.js file
+        require Chart.min
