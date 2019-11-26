@@ -1,10 +1,10 @@
 
 const data2 = {
     labels: [
-        '< 26 years',
-        '26 - 40 years',
-        '41 - 50 years',
-        '51 - 69 years',
+        '<26 years',
+        '26-40 years',
+        '41-50 years',
+        '51-69 years',
         '70+ years'
     ],
     values: [0.0656, 0.2787, 0.3115, 0.3115, 0.0328]
@@ -32,6 +32,20 @@ var chart = new Chart(ctx, {
 
     // Configuration options go here
     options: {
+        tooltips: {
+            callbacks: {
+                label: function (tooltipItem, data) {
+                    var label = data.datasets[tooltipItem.datasetIndex].label || '';
+
+                    if (label) {
+                        label += ': ';
+                    }
+                    label += Math.round(tooltipItem.value * 100) + '%';
+                    return label;
+                }
+            }
+        },
+
         responsive: true,
         elements: {
             line: {
@@ -66,7 +80,16 @@ var chart = new Chart(ctx, {
                 },
                 scaleLabel: {
                     display: true,
-                    labelString: "Percentage"
+                    labelString: "Respondents"
+                }
+            }],
+            xAxes: [{
+                gridLines: {
+                    display: false
+                },
+                scaleLabel: {
+                    display: true,
+                    labelString: "Age of respondents"
                 }
             }]
         }

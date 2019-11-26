@@ -1,12 +1,12 @@
-const data4 = {
-    labels: [
-        'Rural property',
-        'Backyard of existing home',
-        'Cluster living, many tiny homes',
-        'Domestic, residential suburb',
-    ],
-    values: [0.5902, 0.2377, 0.1066, 0.0656]
-};
+// const data4 = {
+//     labels: [
+//         'Rural property',
+//         'Backyard of existing home',
+//         'Cluster living, many tiny homes',
+//         'Domestic, residential suburb',
+//     ],
+//     values: [0.5902, 0.2377, 0.1066, 0.0656]
+// };
 
 
 var ctx = document.getElementById('chart_4').getContext('2d');
@@ -40,13 +40,40 @@ var myBarChart = new Chart(ctx, {
         },
         legend: {
             display: true,
-            position: 'bottom',
+            position: 'top',
             labels: {
                 boxWidth: 10,
                 fontSize: 10,
                 padding: 7
             }
         },
+        scales: {
+            yAxes: [{
+                // id: 'first-y-axis',
+                // type: 'linear',
+                // ticks: {
+                //     stepSize: 0.10,
+                //     min: 0,
+                //     max: .5,
+                //     callback: function (value) {
+                //         return value * 100 + "%"
+                //     },
+                // },
+                scaleLabel: {
+                    display: true,
+                    labelString: "Respondents"
+                }
+            }],
+            xAxes: [{
+                gridLines: {
+                    display: false
+                },
+                scaleLabel: {
+                    display: true,
+                    labelString: "Cost $AUD"
+                }
+            }]
+        }
         // ticks: {
         //     fontSize: 20
         // }

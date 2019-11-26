@@ -26,6 +26,19 @@ var myBarChart = new Chart(ctx, {
         ]
     },
     options: {
+        tooltips: {
+            callbacks: {
+                label: function (tooltipItem, data) {
+                    var label = data.datasets[tooltipItem.datasetIndex].label || '';
+
+                    if (label) {
+                        label += ': ';
+                    }
+                    label += Math.round(tooltipItem.value * 100) + '%';
+                    return label;
+                }
+            }
+        },
         legend: { display: false },
         title: {
             display: true,
@@ -45,7 +58,12 @@ var myBarChart = new Chart(ctx, {
                 },
                 scaleLabel: {
                     display: true,
-                    labelString: "Percentage"
+                    labelString: "Respondents"
+                }
+            }],
+            yAxes: [{
+                gridLines: {
+                    display: false
                 }
             }]
         }

@@ -76,23 +76,35 @@ aside, section {
 
 // CHARTS --------------------
 
+// THIS IS DOING THE HEIGHT!!
+canvas {
+    height: 100%;
+}
+
 .chartRow {
     // height: 300px;
     // border: 1px solid lightgray;
     margin: 0px auto 50px auto;
-    
+    height: 300px;
     display: flex;
     flex-wrap: nowrap;
+    // background-color: orange ;
 }
 
 .chartContainer {
     position: relative;
     /* max-height: 200px; */
+    height: 300px;
     width: 100vw;
-    max-width: 400px;
+    // max-width: 400px;
     margin: 10px auto 0px auto;
     padding: 20px 20px 20px 20px;
     // border: .5px lightgray solid;
+}
+
+// NOT DOING ANYTHING
+.chart {
+    height: 100px;
 }
 
 .chart--col-6 {

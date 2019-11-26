@@ -3,7 +3,7 @@ const data3 = {
         'Rural property',
         'Backyard of existing home',
         'Cluster living, many tiny homes',
-        'Domestic, residential suburb',
+        'Domestic, residential suburb'
     ],
     values: [0.5902, 0.2377, 0.1066, 0.0656]
 };
@@ -24,6 +24,19 @@ var myBarChart = new Chart(ctx, {
         ]
     },
     options: {
+        tooltips: {
+            callbacks: {
+                label: function (tooltipItem, data) {
+                    var label = data.datasets[tooltipItem.datasetIndex].label || '';
+
+                    if (label) {
+                        label += ': ';
+                    }
+                    label += Math.round(tooltipItem.value * 100) + '%';
+                    return label;
+                }
+            }
+        },
         legend: { display: false },
         title: {
             display: true,
@@ -41,9 +54,17 @@ var myBarChart = new Chart(ctx, {
                         return value * 100 + "%"
                     },
                 },
+                gridLines: {
+                    display: true
+                },
                 scaleLabel: {
                     display: true,
-                    labelString: "Percentage"
+                    labelString: "Respondents"
+                }
+            }],
+            yAxes: [{
+                gridLines: {
+                    display: false
                 }
             }]
         }
