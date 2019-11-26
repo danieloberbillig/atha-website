@@ -1,7 +1,7 @@
 
 const data2 = {
     labels: [
-        '<26 years',
+        '< 26 years',
         '26-40 years',
         '41-50 years',
         '51-69 years',
@@ -21,6 +21,7 @@ var chart = new Chart(ctx, {
         labels: data2.labels,
         // labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
         datasets: [{
+            lineTension: 0,
             label: 'Living in tiny house',
             backgroundColor: 'rgba(0, 150, 150, .3)',
             borderColor: 'rgb(255, 255, 255)',
@@ -57,7 +58,7 @@ var chart = new Chart(ctx, {
         },
         title: {
             display: true,
-            text: 'Living in tiny house'
+            text: 'Living in a tiny house'
         },
 
         elements: {
@@ -71,16 +72,15 @@ var chart = new Chart(ctx, {
                 id: 'first-y-axis',
                 type: 'linear',
                 ticks: {
-                    stepSize: 0.10,
+                    stepSize: 0.2,
                     min: 0,
-                    max: .5,
                     callback: function (value) {
                         return value * 100 + "%"
                     },
                 },
                 scaleLabel: {
                     display: true,
-                    labelString: "Respondents"
+                    // labelString: "Respondents"
                 }
             }],
             xAxes: [{
@@ -89,7 +89,7 @@ var chart = new Chart(ctx, {
                 },
                 scaleLabel: {
                     display: true,
-                    labelString: "Age of respondents"
+                    labelString: "Age group"
                 }
             }]
         }

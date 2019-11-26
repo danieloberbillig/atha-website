@@ -1,3 +1,5 @@
+// MOBILE FIRST: default for small devices then work way upwards
+
 body {
     background-color: #F8F8F6;
     font-family: 'Merriweather', serif;
@@ -6,7 +8,6 @@ body {
 
 .contentContainer {
     background-color: #FFF;
-    max-width: 85%;
     margin: 50px auto 0 auto;
     border: 2px solid rgba(0,0,0,.1);
     color: #5c5c5c;
@@ -15,7 +16,7 @@ body {
 }
 
 .innerContentContainer {
-    margin: 50px 190px 0 190px;
+    margin: 50px 40px 0 40px;
 }
 
 .contentHeader {
@@ -76,49 +77,97 @@ aside, section {
 
 // CHARTS --------------------
 
-// THIS IS DOING THE HEIGHT!!
-canvas {
-    height: 100%;
-}
-
 .chartRow {
-    // height: 300px;
-    // border: 1px solid lightgray;
-    margin: 0px auto 50px auto;
-    height: 300px;
+    margin: 40px auto 40px auto;
     display: flex;
     flex-wrap: nowrap;
-    // background-color: orange ;
 }
 
+.chartRow--small {
+    margin: 40px auto 40px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+// needed for responsiveness in Chart.js - do not work directly on canvas
 .chartContainer {
     position: relative;
-    /* max-height: 200px; */
-    height: 300px;
-    width: 100vw;
-    // max-width: 400px;
-    margin: 10px auto 0px auto;
-    padding: 20px 20px 20px 20px;
-    // border: .5px lightgray solid;
+    margin: 0px auto 0px auto;
 }
 
-// NOT DOING ANYTHING
-.chart {
-    height: 100px;
+.chartContainer--12 {
+    width: 100%;
 }
 
-.chart--col-6 {
-    flex: 6;
+.chartContainer--6 {
+    width: 100%;
 }
 
-.chart--col-12 {
-    flex: 12;
+
+
+
+
+
+
+// BREAKPOINTS
+/* Responsive Web Design - Media Queries */
+/* MOBILE FIRST: default css for mobile phone */
+/* Extra small devices */
+
+
+/* then work your way up for larger devices using min-width */
+@media only screen and (min-width: 640px) {
+    /* Small devices (portrait tablets and large phones, 640px and up) */
 }
 
-#chart_1 {
-    // background-color: red;
+@media only screen and (min-width: 768px) {
+    /* Medium devices (landscape tablets, 768px and up) */
+
+      // CHARTS --------------------
+      .chartRow {
+        margin: 40px auto 40px auto;
+        height: 300px;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .chartRow--small {
+        margin: 40px auto 40px auto;
+        height: 200px;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    // needed for responsiveness in Chart.js - do not work directly on canvas
+    .chartContainer {
+        position: relative;
+        margin: 0px auto 0px auto;
+    }
+
+    .chartContainer--12 {
+        width: 80%;
+    }
+
+    .chartContainer--6 {
+        width: 100%;
+    }
 }
 
-#chart_2 {
-    // background-color: orange;
+@media only screen and (min-width: 1024px) {
+    /* Large devices (laptops/desktops, 1024px and up) */
+    .contentContainer {
+        max-width: 85%;
+        margin: 50px auto 0 auto;
+    }
+
+    .innerContentContainer {
+        margin: 50px 190px 0 190px;
+    }
+
+
+  
+}
+
+@media only screen and (min-width: 1200px) {
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
 }

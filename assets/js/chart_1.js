@@ -3,7 +3,7 @@ console.log(`chart1 ready`);
 
 const data1 = {
     labels: [
-        '<26 years',
+        '< 26 years',
         '26-40 years',
         '41-50 years',
         '51-69 years',
@@ -24,6 +24,7 @@ var chart = new Chart(ctx, {
         labels: data1.labels,
         // labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
         datasets: [{
+            lineTension: 0, 
             label: 'Community interest',
             backgroundColor: 'rgb(0, 150, 150)',
             borderColor: 'rgb(255, 255, 255)',
@@ -35,7 +36,6 @@ var chart = new Chart(ctx, {
 
     // Configuration options go here
     options: {
-        bezierCurve: false,  // not working
         responsive: true,
         elements: {
             line: {
@@ -61,7 +61,7 @@ var chart = new Chart(ctx, {
                 id: 'first-y-axis',
                 type: 'linear',
                 ticks: {
-                    stepSize: 25
+                    stepSize: 100
                 },
                 gridLines: {
                     display: true
@@ -77,7 +77,7 @@ var chart = new Chart(ctx, {
                 },
                 scaleLabel: {
                     display: true,
-                    labelString: "Age of respondents"
+                    labelString: "Age group"
                 }
             }]
         }
