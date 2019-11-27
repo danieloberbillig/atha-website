@@ -51,14 +51,14 @@ var myBarChart = new Chart(ctx, {
             yAxes: [{
                 // id: 'first-y-axis',
                 // type: 'linear',
-                // ticks: {
-                //     stepSize: 0.10,
-                //     min: 0,
-                //     max: .5,
-                //     callback: function (value) {
-                //         return value * 100 + "%"
-                //     },
-                // },
+                ticks: {
+                    stepSize: 10,
+                    // min: 0,
+                    // max: .5,
+                    // callback: function (value) {
+                    //     return value * 100 + "%"
+                    // },
+                },
                 scaleLabel: {
                     display: true,
                     labelString: "Respondents"
