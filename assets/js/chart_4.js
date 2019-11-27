@@ -34,6 +34,7 @@ var myBarChart = new Chart(ctx, {
         ]
     },
     options: {
+        maintainAspectRatio: false,
         title: {
             display: true,
             text: 'Cost and Type of Tiny House'

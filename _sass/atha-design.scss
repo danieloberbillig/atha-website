@@ -33,9 +33,18 @@ body {
 }
 
 
+.contentHeader__subtitle {
+    margin-bottom: 25px;
+    font-size: 0.9em;
+}
 
+.intro {
+    color: rgb(56, 56, 56);
+    font-weight: 600;
+    font-size: 1.1em;
+}
 
-.mainTitle {
+.contentHeader__title {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     color: #222;
@@ -123,7 +132,10 @@ p {
 }
 
 
-
+#chart_4 {
+    height: 300px;
+    // background-color: red;
+}
 
 
 // BREAKPOINTS

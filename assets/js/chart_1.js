@@ -1,4 +1,3 @@
-console.log(`chart1 ready`);
 
 
 const data1 = {

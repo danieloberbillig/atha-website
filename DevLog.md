@@ -109,7 +109,30 @@ Research
 - Chartist      very limited charts
 - Chart.js
 - Highcharts    BEST free for non-profit - atha seems not to be non-profit
+- to change height: disable aspectratio in options
+     options: {
+        maintainAspectRatio: false,
 
+- dataset structure: example radar chart
+       data: {
+        labels: [
+            'Item 1',
+            'Item 2',
+            'Item 3'
+        ],
+        datasets: [
+            {
+                label: 'Male',
+                data: [22, 84, 7, 24],
+                backgroundColor: ["rgb(0, 150, 150)"],
+            },
+            {
+                label: 'Female',
+                data: [22, 84, 7, 24],
+                backgroundColor: ["rgb(0, 250, 250)"],
+            }
+        ],
+    },
 
 # Ruby Gems
 - seem to be installed mostly in ruby central runtime folder on C:\Ruby26-x64\lib\ruby\gems\2.6.0\gems

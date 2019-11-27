@@ -1,0 +1,27 @@
+{
+  "name": "atha-website",
+  "version": "1.0.0",
+  "description": "Publish ATHA survey results on website",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "bundle exec jekyll serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danieloberbillig/atha-website.git"
+  },
+  "keywords": [
+    "atha",
+    "jekyll",
+    "web",
+    "chartjs",
+    "survey"
+  ],
+  "author": "Daniel Oberbillig (danieloberbillig.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danieloberbillig/atha-website/issues"
+  },
+  "homepage": "https://github.com/danieloberbillig/atha-website#readme"
+}
