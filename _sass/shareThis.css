@@ -1,0 +1,41 @@
+/* // SHARE THIS AREA ------------------------- */
+
+.shareThis {
+    margin: 10px auto 50px auto;
+    padding-top: 25px;
+    text-align: center;
+}
+
+.shareThis__title {
+    display: inline;
+    margin-right: 20px;
+}
+
+.shareThis__title h1 {
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: rgb(172, 171, 171);
+    display: inline;
+    font-size: 1.7em;
+}
+
+.shareThis__links {
+    display: inline;
+}
+
+.shareThis__socialMedia {
+    list-style: none;
+    display: inline;
+}
+
+.shareThis__socialMedia li {
+    display: inline;
+    margin-right: 15px;
+    font-size: 1.6em;
+}
+
+.shareThis__socialMedia li a {
+    text-decoration: none;
+    color: rgb(172, 171, 171);
+}
