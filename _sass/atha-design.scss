@@ -33,24 +33,34 @@ body {
 }
 
 
-.contentHeader__subtitle {
-    margin-bottom: 25px;
-    font-size: 0.9em;
-}
+
 
 .intro {
     color: rgb(56, 56, 56);
     font-weight: 600;
     font-size: 1.1em;
+    margin-top: 2rem;
 }
 
 .contentHeader__title {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     color: #222;
-    margin: 0 0 25px 0;
-    font-size: 3em;
+    margin: 3em 0 1em 0;
+    font-size: 2.2em;
     line-height: 1.2;
+    text-align: center;
+    
+}
+
+.contentHeader__title > span {
+    font-weight: 600;
+}
+
+.contentHeader__subtitle {
+    margin-bottom: 65px;
+    font-size: 0.9em;
+    text-align: center;
 }
 
 .title, aside>h1, section>h1 {
@@ -96,6 +106,16 @@ p {
 
 
 // CHARTS --------------------
+.chart__image__container {
+    margin: 40px auto 40px auto;
+    height: 350px;
+    text-align: center;
+}
+
+.chart__image {
+    height: 100%;
+    width: auto;
+}
 
 .chartRow {
     margin: 40px auto 40px auto;
@@ -151,6 +171,13 @@ p {
 
 @media only screen and (min-width: 768px) {
     /* Medium devices (landscape tablets, 768px and up) */
+
+    .contentHeader__title {
+        font-size: 3em;
+    }
+    
+
+
 
       // CHARTS --------------------
       .chartRow {
