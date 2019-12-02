@@ -149,3 +149,12 @@ https://github.com/coderbydesign/chart-js-rails
         gem install chart-js-rails
     3. add to app.js file
         require Chart.min
+
+
+# Scrollspy via Materializecss
+- see https://materializecss.com/scrollspy.html
+- all content (whole website text content) needs to be wrapped in a div .row
+=> turns out to wreck my whole layout
+
+# Trying native code for scrollspy
+https://css-tricks.com/sticky-smooth-active-nav/

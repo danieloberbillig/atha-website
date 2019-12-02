@@ -4,12 +4,18 @@ body {
     background-color: #F8F8F6;
     font-family: 'Merriweather', serif;
     font-weight: 300;
+
+}
+
+.scrollspyContainer {
+    display: none;
 }
 
 .contentContainer {
+    // flex-grow: 1;
     background-color: #FFF;
     margin: 50px auto 0 auto;
-    border: 2px solid rgba(0,0,0,.1);
+    // border: 2px solid rgba(0,0,0,.1);
     color: #5c5c5c;
     font-size: 14px;
     line-height: 1.8em;
@@ -35,6 +41,7 @@ body {
 
 
 
+
 .intro {
     color: rgb(56, 56, 56);
     font-weight: 600;
@@ -54,7 +61,7 @@ body {
 }
 
 .contentHeader__title > span {
-    font-weight: 600;
+    font-weight: 300;
 }
 
 .contentHeader__subtitle {
@@ -147,9 +154,7 @@ p {
     margin-bottom: 40px;
 }
 
-.mobile--larger {
-    // height: 100%;
-}
+
 
 
 #chart_4 {
@@ -171,6 +176,7 @@ p {
 
 @media only screen and (min-width: 768px) {
     /* Medium devices (landscape tablets, 768px and up) */
+
 
     .contentHeader__title {
         font-size: 3em;
@@ -209,15 +215,77 @@ p {
     }
 }
 
+
+
+
+
+
 @media only screen and (min-width: 1024px) {
     /* Large devices (laptops/desktops, 1024px and up) */
+    
+    /* for scrollspay aside -------------------*/
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    .mainGridContainer {
+        margin: 0;
+        display: grid;
+        // grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr min-content;
+    }
+
+    .scrollspyContainer {
+        white-space: nowrap;
+        display: inline;
+        padding-top: 8rem;
+        padding-left: 4.5rem;
+    }
+    
+    .scrollspyContainer ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        position: sticky;
+        top: 10rem;
+        font-size: 0.7rem;
+    }
+
+    .scrollspyContainer ul li a {
+        display: block;
+        line-height: 1.5;
+        padding: .5rem .5rem;
+        color: inherit;
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .scrollspyContainer ul li a:hover {
+        color: #5c5c5c;
+        font-weight: 800;
+    }
+    
+    .scrollspyContainer ul li a.current {
+        // text-decoration: underline;
+        color: #5c5c5c;
+        // background-color: #5c5c5c;
+        // color: white;
+        font-weight: 800;
+        border-left: 1px solid #5c5c5c, 
+    }
+    // -----------------------------------------
+
+
     .contentContainer {
         max-width: 85%;
         margin: 50px auto 0 auto;
+        border: 2px solid rgba(0,0,0,.1);
+
     }
 
     .innerContentContainer {
-        margin: 50px 190px 0 190px;
+        margin: 50px 190px 0 140px;
+        // margin: 50px 190px 0 190px;
     }
 
 
