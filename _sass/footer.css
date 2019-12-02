@@ -1,0 +1,205 @@
+/* ------------------------------ */
+/* BASE LAYOUT */
+/* ------------------------------ */
+
+.do-standard-footer {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(191, 191, 191);
+    background-color: rgb(89, 89, 89);
+    margin: 0;
+    padding: 0;
+}
+
+.colTitle {
+    font-size: 0.7em;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+
+
+
+.do-standard-footer li {
+    list-style: none;
+    font-size: 0.7em;
+    margin-top: 10px;
+}
+
+.do-standard-footer a {
+    text-decoration: none;
+    color: rgb(191, 191, 191);
+}
+
+
+
+/* ------------------------------ */
+/* GRID LAYOUT */
+/* ------------------------------ */
+
+.do-standard-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-columns: 300px auto auto auto 250px; */
+    max-height: 120px;
+    padding: 50px 30px 20px 30px;
+}
+
+.col1 {
+    grid-area: "col1";
+}
+
+.col2 {
+    grid-area: "col2";
+}
+
+.col3 {
+    grid-area: "col3";
+}
+
+
+/* ------------------------------ */
+/* SPECIFIC LAYOUT */
+/* ------------------------------ */
+
+
+
+.col1 p {
+    font-size: 0.7em;
+    line-height: 1.7;
+}
+
+.col1 .socialMedia {
+    margin-top: 1em;
+}
+
+.portrait {
+    height: 60px;
+    float: left;
+    margin-right: 15px;
+    border-radius: 50%;
+}
+
+.socialMedia>img {
+    height: 20px;
+    width: 20px;
+}
+
+.socialMediaIcon>* {
+    font-size: 1.5em;
+    margin-right: 3px;
+}
+
+
+
+.justifyTxt {
+    text-align: left;
+    width: 75%;
+}
+
+
+
+#clientName {
+    margin-top: -18px;
+    font-size: 1rem;
+}
+
+#clientContact {
+    margin-top: 15px;
+    font-size: 1.1rem;
+}
+
+
+.contact {
+    font-size: 0.7em;
+    line-height: 1.7;
+    margin-top: 12px;
+}
+
+
+
+
+/* ------------------------------ */
+/* CSS BREAKPOINTS */
+/* ------------------------------ */
+/* anything small: mobile first approach */
+/* Smartphones (portrait and landscape) ----------- */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    
+    .do-standard-footer {
+        height: 100%;
+        padding: 50px 15px 0 15px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+            "col1"
+            "col2"
+            "col3" 
+    }    
+
+    .do-standard-footer h1 {
+        font-size: 1.3em;
+    }
+    
+    .do-standard-footer h2 {
+        font-size: 1em;
+    }
+    
+    .do-standard-footer p {
+        font-size: 1em;
+    }
+    
+   
+    
+    .do-standard-footer li {
+        font-size: 1em;
+    }
+
+    .col1 p {
+        line-height: 1.3em; 
+    }
+    
+    
+    .portrait {
+        height: 100%;
+        float: left;
+        margin-right: 15px;
+        border-radius: 50%;
+    }
+    
+    .imageAndText {
+        width: 85vw;
+    }
+
+   
+    
+    .socialMediaIcon>* {
+        margin-top: 20px;
+        font-size: 2.5em;
+        margin-right: 5px;
+    }
+
+   
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    /*  */
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    /*  */
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    /*  */
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    /*  */
+}
