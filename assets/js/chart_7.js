@@ -34,6 +34,7 @@ var myDoughnutChart = new Chart(ctx, {
         ],
     },
     options: {
+        maintainAspectRatio: false,
         title: {
             display: true,
             text: 'Electrical Power'

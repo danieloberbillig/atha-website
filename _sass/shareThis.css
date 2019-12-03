@@ -1,7 +1,7 @@
 /* // SHARE THIS AREA ------------------------- */
 
 .shareThis {
-    margin: 10px auto 50px auto;
+    margin: 10px auto 30px auto;
     padding-top: 25px;
     text-align: center;
 }
@@ -17,7 +17,7 @@
     font-weight: 300;
     color: rgb(172, 171, 171);
     display: inline;
-    font-size: 1.7em;
+    font-size: 1.5em;
 }
 
 .shareThis__links {
@@ -32,10 +32,31 @@
 .shareThis__socialMedia li {
     display: inline;
     margin-right: 15px;
-    font-size: 1.6em;
 }
 
 .shareThis__socialMedia li a {
     text-decoration: none;
     color: rgb(172, 171, 171);
+}
+
+.socialMediaIcon i {
+    font-size: 1.5rem;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .shareThis {
+        margin: 10px 10px 30px 10px;
+        padding-top: 15px;
+        text-align: center;
+    }
+
+    .shareThis__socialMedia li {
+        display: inline;
+        margin-right: 3px;
+    }
+
+    .socialMediaIcon i {
+        font-size: 2rem;
+    }
 }
