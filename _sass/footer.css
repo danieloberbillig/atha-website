@@ -11,6 +11,12 @@
     padding: 40px 20px 10px 100px;
 }
 
+/* .footer__content {
+    width: 1500px;
+    margin: 40px auto 10px auto;
+    background-color: red;
+} */
+
 .do-standard-footer a {
     text-decoration: none;
     color: rgb(191, 191, 191);
@@ -73,7 +79,7 @@
 
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     
     .do-standard-footer {
         height: 100%;
@@ -129,7 +135,6 @@
         margin-top: 20px;
         margin-bottom: 20px;
     }
-   
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -138,8 +143,10 @@
 } 
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-    /*  */
+@media only screen and (max-width: 1024px) {
+    .do-standard-footer {
+        padding: 40px 20px 10px 10px;
+    }
 } 
 
 /* Large devices (laptops/desktops, 992px and up) */

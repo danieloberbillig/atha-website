@@ -13,26 +13,20 @@ const data2 = {
 
 var ctx = document.getElementById('chart_2').getContext('2d');
 var chart = new Chart(ctx, {
-    // The type of chart we want to create
     type: 'line',
-
-    // The data for our dataset
     data: {
         labels: data2.labels,
-        // labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
         datasets: [{
             lineTension: 0,
             label: 'Living in tiny house',
             backgroundColor: 'rgba(0, 200, 200)',
             borderColor: 'rgb(255, 255, 255)',
             data: data2.values
-            // data: [100, 50, 50, 10, 10, 30, 45]
         }]
     },
-    // pointRadius: 0,
 
-    // Configuration options go here
     options: {
+        maintainAspectRatio: false,
         tooltips: {
             callbacks: {
                 label: function (tooltipItem, data) {
@@ -80,7 +74,6 @@ var chart = new Chart(ctx, {
                 },
                 scaleLabel: {
                     display: true,
-                    // labelString: "Respondents"
                 }
             }],
             xAxes: [{

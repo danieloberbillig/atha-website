@@ -15,34 +15,28 @@ const data1 = {
 
 var ctx = document.getElementById('chart_1').getContext('2d');
 var chart = new Chart(ctx, {
-    // The type of chart we want to create
     type: 'line',
-
-    // The data for our dataset
     data: {
         labels: data1.labels,
-        // labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
         datasets: [{
             lineTension: 0, 
             label: 'Community interest',
             backgroundColor: 'rgb(0, 150, 150)',
             borderColor: 'rgb(255, 255, 255)',
             data: data1.values
-            // data: [100, 50, 50, 10, 10, 30, 45]
         }]
     },
-    // pointRadius: 0,
 
-    // Configuration options go here
     options: {
+        maintainAspectRatio: false,
         responsive: true,
         elements: {
             line: {
-                tension: 0 // disables bezier curves NOT WORKING
+                tension: 0
             }
         },
         legend: {
-            display: false,
+            display: false
         },
         title: {
             display: true,
@@ -77,7 +71,7 @@ var chart = new Chart(ctx, {
                 scaleLabel: {
                     display: true,
                     labelString: "Age group"
-                }
+                },
             }]
         }
     }
