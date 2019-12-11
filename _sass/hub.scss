@@ -1,22 +1,50 @@
 .hubContainer {
     display: flex;
     margin: 0 auto 0 auto;
-    background-color: red;
+    // background-color: red;
     flex-flow: column nowrap;
     width: 100%;
+    min-height: 90vh;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
 }
+
+.hubContainer a {
+    text-decoration: none;
+}
+
+.hubContainer__title {
+    color: rgb(143, 142, 142);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
+    margin-left: 2rem;
+    
+}
+
+.hubContainer__subtitle {
+    color: rgb(187, 187, 187);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+    margin-left: 2rem;
+}
+
+
 
 // flex parent
 .hubCard {
+    margin-top: 3rem;
     padding: 0;
     
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
-    align-items: stretch;
+    align-items: center;
     
-    background-color: orange;
-    height: 30rem;
+    // background-color: orange;
+    background-color: #fff;
+    height: 23rem;
     
     border-radius: 2px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
@@ -32,15 +60,16 @@
 .hubCard__imgContainer {
     margin: 0;
     flex: 4 1 3;
-    background-color: purple;
+    // background-color: purple;
     min-width: 200px;
     width: 62%;
 }
 
 .hubCard__img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
-    max-width: 40rem;
+    max-width: 35rem;
+    margin-left: 2.5rem;
 }
 
 // flex child of .hubCard
@@ -49,22 +78,36 @@
     flex: 1 1 1;
     min-width: 200px;
     width: 30%;
-   
+    
 
     // width: 36%;
     padding: 1rem 1rem 1rem 1rem;
-    background-color: chartreuse;
+    // background-color: chartreuse;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .hubCard__textContainer h1 {
     font-size: 1.5rem;
+    font-family: 'Merriweather', serif;
+
+    font-weight: 300;
+    color: rgb(56, 56, 56);
+
 }
 
 .hubCard__textContainer p {
     font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+
+    font-weight: 300;
+    color: rgb(56, 56, 56);
+    margin: 0;
+    padding: 0;
+    line-height: 1.4;
+
 
 }
+
 
 
 
