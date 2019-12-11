@@ -1,8 +1,4 @@
-- name: Home
+- name: USER HUB
   link: /
-- name: About the Survey
-  link: /about-the-survey.html
-- name: Survey Reports
-  link: /survey-reports.html
-- name: Team
-  link: /team.html
+- name: SURVEY RESULTS v0.1
+  link: /2019/11/19/surveyreport2019.html

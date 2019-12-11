@@ -1,14 +1,17 @@
 ---
-layout: default
+layout: hub
 title: ATHA Survey Report 2019
 ---
 
-<h1 class="title">{{ "ATHA Survey Report Tiny Houses 2019" }}</h1>
+<h1 class="title">{{ "User Hub" }}</h1>
+<h1 class="subtitle">{{ "Australian Tiny House Association (ATHA)" }}</h1>
 
 
-<p>
-    Add here navigation for different designs:
-    - ATHA website
-    - option 1 (beautiful)
-    - option 2 (even more beautiful)
-</p>
+<ul>
+    {% for post in site.posts %}
+    <li>
+        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        <p>{{ post.excerpt }}</p>
+    </li>
+    {% endfor %}
+</ul>

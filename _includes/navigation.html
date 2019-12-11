@@ -1,9 +1,9 @@
-<a href="https://australiantinyhouseassociation.org.au/" rel="noopener noreferrer">
-  <img
-    src="//static1.squarespace.com/static/5a88b90849fc2b8e071397a3/t/5b57fff31ae6cfbbc6767e6c/1575150753658/?format=100w"
-    alt="ATHA">
-</a>
 <nav>
+    <a  href="https://australiantinyhouseassociation.org.au/" rel="noopener noreferrer">
+      <img class="clientLogo"
+        src="//static1.squarespace.com/static/5a88b90849fc2b8e071397a3/t/5b57fff31ae6cfbbc6767e6c/1575150753658/?format=100w"
+        alt="ATHA">
+    </a>
   {% for item in site.data.navigation %}
   <a href="{{ item.link }}" {% if page.url == item.link %}class="current" {% endif %}>{{ item.name }}</a>
   {% endfor %}

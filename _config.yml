@@ -2,7 +2,7 @@
 
 collections:
   authors:
-    output: true
+    output: false
 
 defaults:
   - scope:
@@ -20,7 +20,7 @@ defaults:
     values:
       layout: "default"
 
-# TODO: theme is not working
+# TODO: theme is not working - probably not downloaded?
 theme: minima
 plugins:
   - jekyll-feed

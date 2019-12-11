@@ -4,24 +4,35 @@ body {
     background-color: #F8F8F6;
     font-family: 'Merriweather', serif;
     font-weight: 300;
+}
 
+
+.contentContainer {
+    // background-color: red;
+    background-color: #FFF;
+    margin: 50px auto 0 auto;
+    color: #5c5c5c;
+    font-size: 14px;
+    line-height: 1.8em;
+    max-width: 100%;
+}
+
+.innerContentContainer {
+    margin: 50px 20px 0 20px;
+}
+
+.mainGridContainer {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    // position: relative;
+    // background-color: orange;
 }
 
 .scrollspyContainer {
     display: none;
 }
 
-.contentContainer {
-    background-color: #FFF;
-    margin: 50px auto 0 auto;
-    color: #5c5c5c;
-    font-size: 14px;
-    line-height: 1.8em;
-}
-
-.innerContentContainer {
-    margin: 50px 20px 0 20px;
-}
 
 .contentHeader {
     margin-top: 100px;
@@ -132,6 +143,7 @@ p {
     margin: 40px auto 40px auto;
     display: flex;
     flex-wrap: wrap;
+    // height: 50px;
 }
 
 // needed for responsiveness in Chart.js - do not work directly on canvas
@@ -162,6 +174,8 @@ p {
 #chart_7  {
     height: 200px;
 }
+
+
 
 
 // BREAKPOINTS
@@ -201,6 +215,8 @@ p {
         flex-wrap: nowrap;
     }
 
+    
+
     // needed for responsiveness in Chart.js - do not work directly on canvas
     .chartContainer {
         position: relative;
@@ -229,11 +245,27 @@ p {
     html {
         scroll-behavior: smooth;
     }
+
+
+    .contentContainer {
+        max-width: 85%;
+        margin: 50px auto 0 auto;
+        border: 2px solid rgba(0,0,0,.1);
+
+    }
+
+    .innerContentContainer {
+        margin: 50px 190px 0 140px;
+    }
+
     
     .mainGridContainer {
         margin: 0;
         display: grid;
-        grid-template-columns: 1fr min-content;
+        grid-template-columns: 600px min-content;
+        // TODO: HAVE TO USE FIX 600px instead of 1fr
+        // to avoid layout break if resize big-to-small-to-big
+        // grid-template-columns: 1fr min-content;
     }
 
     .scrollspyContainer {
@@ -243,6 +275,8 @@ p {
         padding-left: 4.5rem;
         padding-bottom: 50px;
     }
+
+   
     
     .scrollspyContainer ul {
         list-style: none;
@@ -269,28 +303,14 @@ p {
     }
     
     .scrollspyContainer ul li a.current {
-        // text-decoration: underline;
         color: #5c5c5c;
-        // background-color: #5c5c5c;
-        // color: white;
         font-weight: 800;
         border-left: 1px solid #5c5c5c, 
     }
     // -----------------------------------------
 
 
-    .contentContainer {
-        max-width: 85%;
-        margin: 50px auto 0 auto;
-        border: 2px solid rgba(0,0,0,.1);
-
-    }
-
-    .innerContentContainer {
-        margin: 50px 190px 0 140px;
-        // margin: 50px 190px 0 190px;
-    }
-
+   
 
   
 }
