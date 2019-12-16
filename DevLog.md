@@ -78,6 +78,14 @@ bundle update
 - read about dev vs prod environment variable to include analytics in prod
 
 
+## Deploy on Github Pages
+- Github > Settings > Enable Git Pages
+- see url: https://danieloberbillig.github.io/atha-website/
+- update Gem file (comment out, comment in and run 
+    bundle install
+    and
+    bundle update github-pages)
+
 
 ## Run production build
 ```
