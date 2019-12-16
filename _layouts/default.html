@@ -21,25 +21,18 @@
     <!-- favicon -->
     <link rel="shortcut icon" type="image/x-icon"
         href="https://images.squarespace-cdn.com/content/v1/5a88b90849fc2b8e071397a3/1532590657516-9NE70VAJIB2H6Y5W51C2/ke17ZwdGBToddI8pDm48kFZs-yxuSCmGgo1JzJrP3ySoCXeSvxnTEQmG4uwOsdIceAoHiyRoc52GMN5_2H8Wp8YNt3ixqfdFMJsDduzuuwEDyt9kPlFkX5GOpUGPQry3eGC1cYoSGMgDN_A6BMkybA/favicon.ico">
-
-
     
     {% feed_meta %}
     {% seo %}
 </head>
 
 <body>
-    <!-- <h1>default layout</h1> -->
-    <!-- easier to add navigation items and change html structure -->
     {% include danHeader.html %}
     {% include navigation.html %}
 
-
     {{ content }}
-   
 
     {% include shareThis.html %}
-
     {% include footer.html %}
 
     <script src="/assets/js/chart_default.js"></script>
