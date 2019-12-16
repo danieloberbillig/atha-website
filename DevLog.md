@@ -83,8 +83,10 @@ bundle update
 - see url: https://danieloberbillig.github.io/atha-website/
 - update Gem file (comment out, comment in and run 
     bundle install
+    bundle update
     and
     bundle update github-pages)
+- 
 
 
 ## Run production build
