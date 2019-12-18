@@ -89,6 +89,13 @@ bundle update
     bundle update github-pages)
 - 
 
+
+## Deploy on HEROKU
+- atha-survey
+- atha-pipeline
+- stage: production (?) 
+
+
 =======
 >>>>>>> parent of 90a3dbe... update gem file to run on github pages
 
@@ -96,6 +103,8 @@ bundle update
 ```
 JEKYLL_ENV=production bundle exec jekyll build
 ```
+
+
 
 
 ## d3 integration

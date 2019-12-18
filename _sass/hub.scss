@@ -104,7 +104,18 @@
     line-height: 1.4;
 }
 
+// flex child of .hubCard
+.hubCard__titleBlock {
+    flex: 0 1 1;
+    // min-width: 500px;
+    
+}
 
+.hubCard__titleBlock__img {
+    width: 100%;
+    height: auto;
+    max-width: 22rem;
+}
 
 
 
