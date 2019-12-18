@@ -14,3 +14,4 @@ npm start
 https://danieloberbillig.github.io/atha-website/
 
 - Use Jekyll in GitPages via project page (needs gh-pages branch)
+- follow https://idratherbewriting.com/documentation-theme-jekyll/mydoc_publishing_github_pages.html#set-up-your-github-repo
