@@ -7,7 +7,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{ page.title }}</title>
 
-    <link rel="stylesheet" href="/assets/css/styles.css">
+    <!-- testing -->
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    <!-- TO TEST GH-PAGES LOCALLY BEFORE PUSHING -->
+    <!-- For styles with static names... -->
+    <!-- <link href="{{ "/assets/css/styles.css" | relative_url }}" rel="stylesheet"> -->
+    <!-- For documents/pages whose URLs can change... -->
+    <!-- [{{ page.title }}]("{{ page.url | relative_url }}") -->
+    <!-- -------------------------------------- -->
+
+    <!-- <link rel="stylesheet" href="/assets/css/styles.css"> -->
+
     <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,700,700i&display=swap"
