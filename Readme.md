@@ -15,3 +15,5 @@ https://danieloberbillig.github.io/atha-website/
 
 - Use Jekyll in GitPages via project page (needs gh-pages branch)
 - follow https://idratherbewriting.com/documentation-theme-jekyll/mydoc_publishing_github_pages.html#set-up-your-github-repo
+    1. edit _config.yml
+    2. install gh-pages gem by edit Gem file

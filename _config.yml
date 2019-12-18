@@ -1,5 +1,10 @@
 # restart server after each change
 
+# to deploy on gh-pages
+url: danieloberbillig.github.io
+baseurl: /atha-website
+
+
 collections:
   authors:
     output: false
