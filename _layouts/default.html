@@ -6,7 +6,7 @@
     <title>{{ page.title }}</title>
     <!-- <link rel="stylesheet" href="/css/styles.css"> -->
     <link href="{{ "/assets/css/styles.css" | relative_url }}" rel="stylesheet">
-    
+
     <!-- <link rel="stylesheet" href="/assets/css/styles.css"> -->
     <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i&display=swap"
         rel="stylesheet">
@@ -24,7 +24,18 @@
     <!-- favicon -->
     <link rel="shortcut icon" type="image/x-icon"
         href="https://images.squarespace-cdn.com/content/v1/5a88b90849fc2b8e071397a3/1532590657516-9NE70VAJIB2H6Y5W51C2/ke17ZwdGBToddI8pDm48kFZs-yxuSCmGgo1JzJrP3ySoCXeSvxnTEQmG4uwOsdIceAoHiyRoc52GMN5_2H8Wp8YNt3ixqfdFMJsDduzuuwEDyt9kPlFkX5GOpUGPQry3eGC1cYoSGMgDN_A6BMkybA/favicon.ico">
+
+
+
+    <!-- You can use Open Graph tags to customize link previews.
+    Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
+    <meta property="og:url" content="https://danieloberbillig.github.io/atha-website" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="ATHA Survey Results 2019" />
+    <meta property="og:description" content="The Australian Tiny House Survey Results 2019" />
+    <meta property="og:image" content="{{site.baseurl}}/assets/img/devicePreview.jpg" />
     
+
     {% feed_meta %}
     {% seo %}
 </head>
