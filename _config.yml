@@ -3,7 +3,7 @@
 # to deploy on gh-pages
 url: danieloberbillig.github.io
 baseurl: /atha-website
-
+# Use baseurl when your site doesn’t sit at domain root
 
 collections:
   authors:
