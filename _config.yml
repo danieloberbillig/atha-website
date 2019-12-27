@@ -24,6 +24,10 @@ defaults:
       path: ""
     values:
       layout: "default"
+  - scope:
+      path: "assets/img"
+    values:
+      image: true
 
 # TODO: theme is not working - probably not downloaded?
 theme: minima
