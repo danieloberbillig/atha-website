@@ -1,4 +1,4 @@
 - name: USER HUB
-  link: /
+  link: relative_url
 - name: SURVEY RESULTS v0.1
   link: /2019/11/19/surveyreport2019.html
