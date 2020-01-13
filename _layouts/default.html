@@ -3,6 +3,9 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
     <title>{{ page.title }}</title>
     <!-- <link rel="stylesheet" href="/css/styles.css"> -->
     <link href="{{ "/assets/css/styles.css" | relative_url }}" rel="stylesheet">
@@ -34,7 +37,7 @@
     <meta property="og:title" content="ATHA Survey Results 2019" />
     <meta property="og:description" content="The Australian Tiny House Survey Results 2019" />
     <meta property="og:image" content="https://danieloberbillig.github.io/atha-website/assets/img/devicePreview.jpg" />
-    
+
     <!-- Twitter needs its own tags -->
     <meta name="twitter:title" content="ATHA Survey Results 2019">
     <meta name="twitter:description" content="The Australian Tiny House Survey Results 2019">
@@ -47,6 +50,7 @@
 </head>
 
 <body>
+
     {% include danHeader.html %}
     {% include navigation.html %}
 
@@ -54,6 +58,7 @@
 
     {% include shareThis.html %}
     {% include footer.html %}
+
 
     <script src="{{site.baseurl}}/assets/js/chart_default.js"></script>
     <script src="{{site.baseurl}}/assets/js/chart_1.js"></script>
