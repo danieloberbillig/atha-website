@@ -29,7 +29,7 @@ body {
     // background-color: yellow;
 
     // margin: 0;
-    // display: grid;
+    // display: block;
     // grid-template-columns: 1fr;
  
     // position: relative;
@@ -70,7 +70,7 @@ body {
     padding-top: 1em;
     font-weight: 300;
     color: #222;
-    // margin: 3em 0 1em 0;
+    margin: 0em 0 1em 0;
     font-size: 2.2em;
     line-height: 1.2;
     text-align: center;
@@ -83,7 +83,7 @@ body {
 
 .contentHeader__subtitle {
     margin-bottom: 65px;
-    font-size: 0.9em;
+    font-size: 0.8em;
     text-align: center;
 }
 
