@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{ page.title }}</title>
+
+    <!-- TO TEST GH-PAGES LOCALLY BEFORE PUSHING -->
+    <!-- For styles with static names... -->
+    <link href="{{ "/assets/css/styles.css" | relative_url }}" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="/assets/css/styles.css"> -->
+
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,700,700i&display=swap"
+        rel="stylesheet">
+
+    <!-- social media logos -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/x-icon"
+        href="https://images.squarespace-cdn.com/content/v1/5a88b90849fc2b8e071397a3/1532590657516-9NE70VAJIB2H6Y5W51C2/ke17ZwdGBToddI8pDm48kFZs-yxuSCmGgo1JzJrP3ySoCXeSvxnTEQmG4uwOsdIceAoHiyRoc52GMN5_2H8Wp8YNt3ixqfdFMJsDduzuuwEDyt9kPlFkX5GOpUGPQry3eGC1cYoSGMgDN_A6BMkybA/favicon.ico">
+
+    {% feed_meta %}
+    {% seo %}
+
+</head>
+
+<body>
+    <!-- https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/ -->
+    <div id="stickyFooter__page-container">
+        <div id="stickyFooter__content-wrap">
+            <!-- all other page content -->
+            {% include danHeader.html %}
+            {% include navigation.html %}
+            {{ content }}
+        </div>
+        <footer id="stickyFooter">
+            {% include footer.html %}
+        </footer>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+// https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/
+
+#stickyFooter__page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+#stickyFooter__content-wrap {
+    padding-bottom: 0.5rem; /* Footer height */
+}
+
+#stickyFooter {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 0.5rem; /* Footer height */
+}
