@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -7,18 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
     <title>{{ page.title }}</title>
-    <!-- <link rel="stylesheet" href="/css/styles.css"> -->
     <link href="{{ "/assets/css/styles.css" | relative_url }}" rel="stylesheet">
 
-    <!-- <link rel="stylesheet" href="/assets/css/styles.css"> -->
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,700,700i&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css?family=Merriweather:300,500,800|Montserrat:300,500|Roboto:300&display=swap"
         rel="stylesheet">
 
-    <script src="{{site.baseurl}}/assets/js/Chart.bundle.min.js"></script>
-
-
+    <script src="{{ "/assets/js/Chart.bundle.min.js" | relative_url }}"></script>
+    <!-- <script src="{{site.baseurl}}/assets/js/Chart.bundle.min.js"></script> -->
 
     <!-- social media logos -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
@@ -28,25 +24,8 @@
     <link rel="shortcut icon" type="image/x-icon"
         href="https://images.squarespace-cdn.com/content/v1/5a88b90849fc2b8e071397a3/1532590657516-9NE70VAJIB2H6Y5W51C2/ke17ZwdGBToddI8pDm48kFZs-yxuSCmGgo1JzJrP3ySoCXeSvxnTEQmG4uwOsdIceAoHiyRoc52GMN5_2H8Wp8YNt3ixqfdFMJsDduzuuwEDyt9kPlFkX5GOpUGPQry3eGC1cYoSGMgDN_A6BMkybA/favicon.ico">
 
-
-
-    <!-- You can use Open Graph tags to customize link previews.
-    Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
-    <meta property="og:url" content="https://danieloberbillig.github.io/atha-website" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="ATHA Survey Results 2019" />
-    <meta property="og:description" content="The Australian Tiny House Survey Results 2019" />
-    <meta property="og:image" content="https://danieloberbillig.github.io/atha-website/assets/img/devicePreview.jpg" />
-
-    <!-- Twitter needs its own tags -->
-    <meta name="twitter:title" content="ATHA Survey Results 2019">
-    <meta name="twitter:description" content="The Australian Tiny House Survey Results 2019">
-    <meta name="twitter:image" content="https://danieloberbillig.github.io/atha-website/assets/img/devicePreview.jpg">
-    <meta name="twitter:card" content="summary_large_image">
-
-
-    {% feed_meta %}
     {% seo %}
+    {% include socialGraphTwitter.html %}
 </head>
 
 <body>
@@ -60,18 +39,9 @@
     {% include footer.html %}
 
 
-    <script src="{{site.baseurl}}/assets/js/main.js"></script>
-    <!-- <script src="{{site.baseurl}}/assets/js/chart_default.js"></script>
-    <script src="{{site.baseurl}}/assets/js/chart_1.js"></script>
-    <script src="{{site.baseurl}}/assets/js/chart_2.js"></script>
-    <script src="{{site.baseurl}}/assets/js/chart_3.js"></script>
-    <script src="{{site.baseurl}}/assets/js/chart_4.js"></script>
-    <script src="{{site.baseurl}}/assets/js/chart_5.js"></script>
-    <script src="{{site.baseurl}}/assets/js/chart_6.js"></script>
-    <script src="{{site.baseurl}}/assets/js/chart_7.js"></script>
-    <script src="{{site.baseurl}}/assets/js/chart_8.js"></script>
+    <script src="{{ "/assets/js/main.js" | relative_url }}"></script>
+    <!-- <script src="{{site.baseurl}}/assets/js/main.js"></script> -->
 
-    <script src="{{site.baseurl}}/assets/js/scrollspy.js"></script> -->
 </body>
 
 </html>
