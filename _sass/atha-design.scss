@@ -8,33 +8,18 @@ body {
 
 
 .contentContainer {
-    // background-color: red;
     background-color: #FFF;
-    // margin: 10px auto 0 auto;
     color: #5c5c5c;
     font-size: 14px;
     line-height: 1.8em;
     max-width: 100%;
-    // max-width: 100%;
 }
 
 .innerContentContainer {
-    // background-color: orange;
-    // padding-top: 1em;
     margin: 0 20px 0 20px;
     max-width: 90%;
 }
 
-// .mainGridContainer {
-    // background-color: yellow;
-
-    // margin: 0;
-    // display: block;
-    // grid-template-columns: 1fr;
- 
-    // position: relative;
-    // background-color: orange;
-// }
 
 .scrollspyContainer {
     display: none;
@@ -146,8 +131,6 @@ p {
     margin: 40px auto 40px auto;
     display: flex;
     flex-wrap: nowrap;
-
-    // 20/01/2020 needs testing
     height: 15rem;
 }
 
@@ -155,7 +138,6 @@ p {
     margin: 40px auto 40px auto;
     display: flex;
     flex-wrap: wrap;
-    // height: 50px;
 }
 
 // needed for responsiveness in Chart.js - do not work directly on canvas
@@ -270,7 +252,6 @@ p {
 
     .contentContainer {
         max-width: 1100px;
-        // max-width: 85%;
         margin: 50px auto 0 auto;
         border: 2px solid rgba(0,0,0,.1);
 

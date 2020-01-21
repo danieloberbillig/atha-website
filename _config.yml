@@ -29,7 +29,6 @@ defaults:
     values:
       image: true
 
-# TODO: theme is not working - probably not downloaded?
 theme: minima
 plugins:
   - jekyll-feed
