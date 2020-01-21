@@ -126,7 +126,7 @@
 
     .notitia_svgSpace {
         height: 3rem;
-        width: 40%;
+        max-width: 17rem;
     }
     
     .contact {
@@ -163,6 +163,7 @@
     .do-standard-footer {
         padding: 40px 20px 10px 10px;
     }
+
 } 
 
 /* Large devices (laptops/desktops, 992px and up) */
