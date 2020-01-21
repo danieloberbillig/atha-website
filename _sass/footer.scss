@@ -46,6 +46,17 @@
     color: #fff;
 }
 
+.notitia_svgSpace {
+    height: 3rem;
+    width: 60%;
+}
+
+
+#notitia_svgSpace_sub {
+    font-size: .7rem;
+    margin-top: -0.6rem;
+}
+
 #clientName {
     margin-top: -18px;
     font-size: 1rem;
@@ -111,6 +122,11 @@
         width: 97%;
         font-size: 0.9rem;
         line-height: 1.4;
+    }
+
+    .notitia_svgSpace {
+        height: 3rem;
+        width: 40%;
     }
     
     .contact {

@@ -23,5 +23,6 @@
   "bugs": {
     "url": "https://github.com/danieloberbillig/atha-website/issues"
   },
-  "homepage": "https://github.com/danieloberbillig/atha-website#readme"
+  "homepage": "https://github.com/danieloberbillig/atha-website#readme",
+  "dependencies": {}
 }
