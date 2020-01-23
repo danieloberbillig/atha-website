@@ -140,7 +140,7 @@ var chart2 = new Chart(ctx2, {
         datasets: [{
             lineTension: 0,
             label: 'Living in tiny house',
-            backgroundColor: 'rgba(0, 200, 200)',
+            backgroundColor: 'rgb(0, 200, 200)',
             borderColor: 'rgb(255, 255, 255)',
             data: data2.values
         }]
