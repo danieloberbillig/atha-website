@@ -180,3 +180,18 @@ https://github.com/coderbydesign/chart-js-rails
 
 # Trying native code for scrollspy
 https://css-tricks.com/sticky-smooth-active-nav/
+
+
+# Jekyl Plugins  
+https://github.com/digitalsparky/jekyll-minifier
+    - not working, known bug?
+
+https://github.com/hendrikschneider/jekyll-analytics
+    - installed for google analytics
+    - gh-pages automatially set env to prod
+    - for local test run: JEKYLL_ENV=production jekyll serve
+https://github.com/lavas-project/jekyll-pwa
+
+https://github.com/rbuchberger/jekyll_picture_tag
+
+https://github.com/jekyll/jekyll-sitemap

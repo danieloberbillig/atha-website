@@ -1,0 +1,13 @@
+current directory: C:/CodeRepo/atha-website/atha-website/nclude-dependencies/gems/json-2.3.0/ext/json
+C:/Ruby26-x64/bin/ruby.exe -I C:/Ruby26-x64/lib/ruby/2.6.0 -r ./siteconf20200124-14112-xr5077.rb extconf.rb
+creating Makefile
+
+current directory: C:/CodeRepo/atha-website/atha-website/nclude-dependencies/gems/json-2.3.0/ext/json
+make "DESTDIR=" clean
+
+current directory: C:/CodeRepo/atha-website/atha-website/nclude-dependencies/gems/json-2.3.0/ext/json
+make "DESTDIR="
+make: Nothing to be done for 'all'.
+
+current directory: C:/CodeRepo/atha-website/atha-website/nclude-dependencies/gems/json-2.3.0/ext/json
+make "DESTDIR=" install

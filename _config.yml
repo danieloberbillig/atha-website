@@ -34,3 +34,9 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-analytics
+
+jekyll_analytics:
+  GoogleAnalytics:
+    id: UA-110871482-4
+    anonymizeIp: false
