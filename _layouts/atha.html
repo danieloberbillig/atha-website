@@ -14,7 +14,6 @@
         rel="stylesheet">
 
     <script src="{{ "/assets/js/Chart.bundle.min.js" | relative_url }}"></script>
-    <!-- <script src="{{site.baseurl}}/assets/js/Chart.bundle.min.js"></script> -->
 
     <!-- social media logos -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
@@ -25,7 +24,7 @@
         href="https://images.squarespace-cdn.com/content/v1/5a88b90849fc2b8e071397a3/1532590657516-9NE70VAJIB2H6Y5W51C2/ke17ZwdGBToddI8pDm48kFZs-yxuSCmGgo1JzJrP3ySoCXeSvxnTEQmG4uwOsdIceAoHiyRoc52GMN5_2H8Wp8YNt3ixqfdFMJsDduzuuwEDyt9kPlFkX5GOpUGPQry3eGC1cYoSGMgDN_A6BMkybA/favicon.ico">
 
     {% seo %}
-    
+
 </head>
 
 <body>
@@ -39,8 +38,11 @@
 
 
     <script src="{{ "/assets/js/main.js" | relative_url }}"></script>
-    <!-- <script src="{{site.baseurl}}/assets/js/main.js"></script> -->
 
+
+    {% if jekyll.environment == 'production' %}
+        {% include analytics.html %}
+    {% endif %}
 </body>
 
 </html>

@@ -196,6 +196,8 @@ https://github.com/hendrikschneider/jekyll-analytics
     - installed for google analytics
     - gh-pages automatially set env to prod
     - for local test run: *JEKYLL_ENV=production jekyll serve*
+    - NOT WORKING - KNOWN ISSUE: DO MANUAL INSTEAD FOLLOWING
+        https://michaelsoolee.com/google-analytics-jekyll/
 https://github.com/lavas-project/jekyll-pwa
     - added to Gem file and used *bundle* to install gem
     - No Manifesto.json specified yet
