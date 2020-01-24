@@ -195,7 +195,7 @@ https://github.com/digitalsparky/jekyll-minifier
 https://github.com/hendrikschneider/jekyll-analytics
     - installed for google analytics
     - gh-pages automatially set env to prod
-    - for local test run: JEKYLL_ENV=production jekyll serve
+    - for local test run: *JEKYLL_ENV=production jekyll serve*
 https://github.com/lavas-project/jekyll-pwa
     - added to Gem file and used *bundle* to install gem
     - No Manifesto.json specified yet
