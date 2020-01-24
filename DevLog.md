@@ -183,6 +183,12 @@ https://css-tricks.com/sticky-smooth-active-nav/
 
 
 # Jekyl Plugins  
+- add to Gem file to have them available on other systems e.g.
+    gem 'jekyll-analytics'
+    and then run *bundle* to install gem instead of manually
+    gem install jekyll-analytics
+- Gem file: if i use gh-pages: have gems in GROUP: jekyll-plugins do...
+
 https://github.com/digitalsparky/jekyll-minifier
     - not working, known bug?
 
@@ -191,7 +197,7 @@ https://github.com/hendrikschneider/jekyll-analytics
     - gh-pages automatially set env to prod
     - for local test run: JEKYLL_ENV=production jekyll serve
 https://github.com/lavas-project/jekyll-pwa
-
-https://github.com/rbuchberger/jekyll_picture_tag
-
+    - added to Gem file and used *bundle* to install gem
+    - No Manifesto.json specified yet
 https://github.com/jekyll/jekyll-sitemap
+    - was already included in my boilerplate

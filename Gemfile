@@ -25,8 +25,10 @@ gem 'github-pages'
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
-  gem 'jekyll-sitemap'
   gem 'jekyll-seo-tag'
+  gem 'jekyll-analytics'
+  gem 'jekyll-pwa-plugin'
+  gem 'jekyll-sitemap'
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
@@ -41,3 +43,9 @@ gem "wdm", "~> 0.1.1", :install_if => Gem.win_platform?
 
 # Chart.js library
 gem 'chart-js-rails'
+
+# Google Analytics
+# gem 'jekyll-analytics' moved to githubpages group:
+
+# PWA, see https://github.com/lavas-project/jekyll-pwa
+# gem 'jekyll-pwa-plugin'
