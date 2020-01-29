@@ -198,6 +198,7 @@ https://github.com/hendrikschneider/jekyll-analytics
     - for local test run: *JEKYLL_ENV=production jekyll serve*
     - NOT WORKING - KNOWN ISSUE: DO MANUAL INSTEAD FOLLOWING
         https://michaelsoolee.com/google-analytics-jekyll/
+        Code now included but seems not to work from my machine and on gh-pages: 0 visitors
 https://github.com/lavas-project/jekyll-pwa
     - added to Gem file and used *bundle* to install gem
     - No Manifesto.json specified yet
